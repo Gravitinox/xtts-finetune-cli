@@ -154,9 +154,9 @@ def train_gpt(custom_model,version, language, num_epochs, batch_size, grad_acumm
         print_step=50,
         plot_step=100,
         log_model_step=100,
-        save_step=1000,
+        save_step=2000,
         save_n_checkpoints=1,
-        save_checkpoints=True,
+        save_checkpoints=False,
         # target_loss="loss",
         print_eval=False,
         # Optimizer values like tortoise, pytorch implementation with modifications to not apply WD to non-weight parameters.
