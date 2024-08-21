@@ -111,7 +111,7 @@ def train_gpt(custom_model,version, language, num_epochs, batch_size, grad_acumm
         else:
             print(" > Error: The specified custom model is not a valid .pth file path.")
 
-    num_workers = 8
+    num_workers = 4
     if language == "ja":
         num_workers = 0
     # init args and config
