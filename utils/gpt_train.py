@@ -36,8 +36,8 @@ def train_gpt(custom_model,version, language, num_epochs, batch_size, grad_acumm
         formatter="coqui",
         dataset_name="ft_dataset",
         path=os.path.dirname(train_csv),
-        meta_file_train=train_csv,
-        meta_file_val=eval_csv,
+        meta_file_train=os.path.basename(train_csv),
+        meta_file_val=os.path.basename(eval_csv),
         language=language,
     )
 
